@@ -11,15 +11,15 @@
     font-family: "Acrom";
     font-style: normal;
     font-weight: 700;
-    src: local('Acrom-Bolt'), local('Acrom-Bolt'),
-        url('../fonts/Acrom-Bolt.woff') format('woff'),
-        url('../fonts/Acrom-Bolt.woff2') format('woff2')
+    src: local('Acrom-Bold'), local('Acrom-Bold'),
+        url('../fonts/Acrom-Bold.woff') format('woff'),
+        url('../fonts/Acrom-Bold.woff2') format('woff2')
 }
 @font-face {
     font-family: "Acrom";
     font-style: normal;
     font-weight: 800;
-    src: local('Acrom-ExtraBolt'), local('Acrom-ExtraBolt'),
+    src: local('Acrom-ExtraBold'), local('Acrom-ExtraBold'),
         url('../fonts/Acrom-ExtraBold.woff') format('woff'),
         url('../fonts/Acrom-ExtraBold.woff2') format('woff2')
 }
