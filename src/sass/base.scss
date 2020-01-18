@@ -1,7 +1,15 @@
 html {
   box-sizing: border-box;
 }
-
+body {
+  padding-bottom: 64px;
+  background-color: #1f222b;
+}
+main {
+  background-color: #fff;
+  position: relative;
+  z-index: -2;
+}
 *,
 *::before,
 *::after {
@@ -22,14 +30,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-@media (min-width:768) {
-  .container{
+@media (min-width:768px) {
+  .container {
   width: 718px;
 }
 }
 
-@media (min-width:1200) {
-  .container{
+@media (min-width:1024px) {
+  .container {
   width: 1072px;
 }
 }
