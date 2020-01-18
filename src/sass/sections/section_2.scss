@@ -1,0 +1,134 @@
+.dark-bg-section {
+    background-image: radial-gradient(circle at center, #1d283d 0%, #1f212b 100%);
+}
+
+.finding-container {
+    width: 258px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+// delete next
+
+.title-white {
+    font-size: 20px;
+    line-height: 60px;
+    color: $main-white;
+    font-family: $main-font;
+    font-weight: 800;
+}
+
+.title-white_uppercase {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    }
+
+.title-accent {
+    color: $second-color;
+    letter-spacing: 2px;
+}
+
+.finding__item {
+    position: relative;
+
+    &::before {
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: $main-color;
+        position: absolute;
+        top: -24px;
+        left: 4px;
+    }
+}
+
+.finding__description {
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+.finding__description-accent {
+    color: $main-white;
+    font-family: $main-font;
+    font-weight: 800;
+    line-height: 1,5;
+}
+
+@media (max-width: 767px) {
+    .finding__item:not(:last-child) {
+        margin-bottom: 58px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .finding-container {
+        width: 620px;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .title-white {
+        font-size: 36px;
+        margin-bottom: 65px;
+    }
+    
+    .finding__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .finding__item {
+        width: 260px;
+        
+        
+
+        &::before {
+            top: -44px;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+
+.finding__item:nth-child(-n+2) {
+    margin-bottom: 80px;
+}
+}
+
+@media (min-width: 1024px) {
+
+    .finding-container {
+        padding-top: 110px;
+        padding-bottom: 64px;
+        width: 994px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .title-white_uppercase {
+        padding-top: 0;
+    }
+
+    .title-accent {
+        font-size: 46px;
+    }
+
+    .finding__list {
+        width: 654px;
+    }
+
+    .finding__item:nth-child(-n+2) {
+        margin-bottom: 88px;
+    }
+
+    }
