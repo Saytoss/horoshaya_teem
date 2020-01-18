@@ -150,6 +150,12 @@
     .rewards__list-item-title {
         width: 269px;
      }
+     .rewards__list-item{ 
+         transition: transform 0.3s ease-in;
+     }
+     .rewards__list-item:hover {
+         transform: scale(1.15);
+     }
  }
 
   
