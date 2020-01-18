@@ -1,0 +1,35 @@
+.video {
+   padding-top: 75px;
+   padding-bottom: 68px;
+    &__frame {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 310px;
+        height: 220px;
+    }
+}
+@media (max-width: 767px) {
+    .video_container {
+        width: 320px;
+    }
+}
+@media (min-width: 768px) {
+    .video {
+        padding: 90px 0;
+        &__frame {
+            margin-bottom: 66px;
+            height: 400px;
+            width: 654px;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .video {
+    padding-top: 114px;
+    padding-bottom: 96px;
+    &__frame {
+        margin-bottom: 64px;
+    }
+    }
+}

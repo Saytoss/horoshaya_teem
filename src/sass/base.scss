@@ -4,6 +4,8 @@ html {
 body {
   padding-bottom: 64px;
   background-color: #1f222b;
+  position: relative;
+  z-index: -3;
 }
 main {
   background-color: #fff;

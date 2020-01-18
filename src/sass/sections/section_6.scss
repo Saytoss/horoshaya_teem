@@ -1,5 +1,5 @@
 .rewards__title {
-    padding-top: 33px;
+    padding-top: 22px;
     font-size: 20px;
     font-family: $main-font;
     color: rgb(34, 37, 46);
@@ -40,7 +40,7 @@
             content: "0" counter(rewards_counter) ;
             font-size: 70px;
             font-family: "Montserrat";
-            color: #f6f6f6;
+            color: rgb(246, 246, 246);
             font-weight: bold;
             line-height: 1.2;
             position: absolute;
@@ -98,7 +98,7 @@
 }
  @media (min-width: 768px ) {
      .rewards__title {
-         padding-top: 42px;
+         padding-top: 34px;
         font-size: 24px;
         line-height: 1.667;
         margin-bottom: 24px;
@@ -124,7 +124,7 @@
  }
  @media (min-width: 1024px) {
     .rewards__title {
-        padding-top: 56px;
+        padding-top: 36px;
         margin-bottom: 36px;
     }
     .rewards__list {
