@@ -8,7 +8,6 @@
   background-size: 100% auto;
   &__title-h2 {
       text-align: center;
-      margin-bottom: 5px;
       line-height: 3;  
   }
   &__title-h3 {
@@ -21,7 +20,7 @@
       text-transform: uppercase;
       line-height: 1.333;
       margin: 0 auto;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       text-align: center;  
   }
   &__title-text {
@@ -35,10 +34,10 @@
       text-align: center; 
   }
 }
-.logotype {
+.header__logotype {
     margin: 0 auto;
     padding-top: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .title-white {
     font-size: 20px;
