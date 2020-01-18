@@ -1,0 +1,66 @@
+.dark-bg-section {
+  background-image: radial-gradient(circle at center, #1d283d 0%, #1f222b 100%);
+}
+
+.description {
+  padding-top: 75px;
+  padding-bottom: 72px;
+
+  &__wrapper {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-family: $main-font;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #6b6f7a;
+    text-align: center;
+      
+    &-link {
+      color: $second-color;
+    }
+  }
+}
+
+.logotype {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+@media(max-width: 767px) {
+  .description__text-part {
+    display: block;
+  }
+}
+
+@media(min-width: 768px) {
+  .description {
+    padding: 88px 0;
+  
+    &__wrapper {
+      width: 489px;
+    }
+  }
+
+  .logotype {
+    margin-bottom: 46px;
+  }
+}
+
+
+@media(min-width: 1024px) {
+  .description {
+    padding: 98px 0;
+    
+    &__wrapper {
+      width: 696px;
+    }
+  }
+}
