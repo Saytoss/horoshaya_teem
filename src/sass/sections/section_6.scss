@@ -1,0 +1,155 @@
+.rewards__title {
+    padding-top: 33px;
+    font-size: 20px;
+    font-family: $main-font;
+    color: rgb(34, 37, 46);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 18px;
+    padding-bottom: 32px;
+}
+.rewards__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    counter-reset: rewards_counter;
+    &-item {
+        width: 225px;
+        background-color:#fff;
+        box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
+        height: 465px;
+        position: relative;
+
+        &:last-child .rewards__list-item-text {
+            margin-bottom: 4px;
+
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: $main-color;
+            width: 12px;
+            height: 12px;
+            top: -24px;
+        }
+        &::after {
+            counter-increment: rewards_counter;
+            content: "0" counter(rewards_counter) ;
+            font-size: 70px;
+            font-family: "Montserrat";
+            color: rgb(246, 246, 246);
+            font-weight: bold;
+            line-height: 1.2;
+            position: absolute;
+            top: -52px;
+            left: 20px;
+            z-index: -1;
+        }
+        &-title {
+            padding-top: 40px;
+            padding-left: 24px;
+            font-size: 18px;
+            font-family: $main-font;
+            color: rgb(0, 0, 0);
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 1.444; 
+            margin-bottom: 12px;
+        }
+        &-text {
+            font-size: 14px;
+            font-family: $main-font;
+            color: #7f828c;
+            font-weight: 400;
+            line-height: 1.5;
+            padding-left: 28px;
+            margin-bottom: 16px;
+            width: 218px;
+        }
+        &-img {
+            transform: translateX(-8px);
+           margin: 0 auto;
+        }
+    }
+}
+.blackbold {
+    color: rgb(0, 0, 0);
+}
+.span {
+    display: block;
+}
+
+@media (max-width: 767px)  {
+    .rewards__container {
+        width: 320px;
+    }
+    .rewards__list-item:first-child {
+        height: 414px;
+    }
+    .rewards__list-item:not(:last-child) {
+        margin-bottom: 64px;
+    }
+    .rewards__list{
+        padding-bottom: 36px;
+    }
+}
+ @media (min-width: 768px ) {
+     .rewards__title {
+         padding-top: 42px;
+        font-size: 24px;
+        line-height: 1.667;
+        margin-bottom: 24px;
+     }
+     .rewards__list-item:not(:last-child) {
+         margin-right: 20px;
+     }
+    .rewards__list {
+        padding-bottom: 44px;
+        line-height: 1.667;
+    }
+    .rewards__list-item:first-child .rewards__list-item-text {
+        margin-bottom: 66px;
+    }
+ }
+ @media (max-width: 1199px) {
+     .rewards__list-item {
+         height: 465px;
+     }
+     .rewards__list-item-title {
+        width: 156px;
+     }
+ }
+ @media (min-width: 1024px) {
+    .rewards__title {
+        padding-top: 56px;
+        margin-bottom: 36px;
+    }
+    .rewards__list {
+        margin: 0 auto;
+        width: 930px;
+        &-item {
+            width: 290px;
+            height: 434px;
+            &::before {
+                top: -32px;
+            }
+        }
+    }
+    .rewards__list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+    .rewards__list-item:first-child .rewards__list-item-text {
+        margin-bottom: 70px;
+    }
+    .rewards__list-item-title {
+        width: 244px;
+    }
+    .rewards__list-item-title {
+        width: 269px;
+     }
+ }
+
+  
