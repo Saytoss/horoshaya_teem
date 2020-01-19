@@ -121,18 +121,21 @@
     }
     .toTop-arrow {
         position: fixed;
-        bottom: 50px;
-        right: 50px;
-        width: 80px;
-        height: 80px;
+        bottom: 15px;
+        right: 15px;
+        width: 60px;
+        height: 60px;
         background-color: $main-color;
         border-radius: 50%;
         border: none;
-        opacity: .8;
-        background-image: url(../images/up-arrow.svg);
+        opacity: .6;
+        background-image: url(../images/up.svg);
         outline: none;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+        &:hover {
+            box-shadow: 0px 8px 43px 0px rgba(230, 98, 10, 0.9);
+        }
     }
 }
