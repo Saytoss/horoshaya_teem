@@ -29,7 +29,7 @@
       text-align: center; 
   }
 }
-@media (min-resolution: 192dpi) {
+@media (min-width: 320px) and (min-resolution: 192dpi) {
     .header {
     background-image: linear-gradient(rgba( 14, 31, 52, 0.29 ),rgba( 14, 31, 52, 0.29 )), url(../images/bg_mobile@2x.png);
 }
