@@ -1,4 +1,5 @@
 .header {
+  padding-top: 30px;
   min-height: 450px;  
   margin: 0 auto;
   background-color: rgb(24,28,39);
@@ -11,46 +12,44 @@
       line-height: 3;  
   }
   &__title-h3 {
+      @include font ($main-font, 30px, #ffffff);
+      @include text-style (1.33, uppercase, 700);
       display: block;
       width: 230px;
-      font-size: 30px;
-      font-family: $main-font;
-      color: rgb( 255, 255, 255 );
-      font-weight: bold; 
-      text-transform: uppercase;
-      line-height: 1.333;
       margin: 0 auto;
       margin-bottom: 20px;
       text-align: center;  
   }
   &__title-text {
+    @include font ($main-font, 14px, rgba( 255, 255, 255, 0.541 ));
       display: block;
       width: 165px;
       margin: 0 auto;
-      font-size: 14px;
-      font-family: $main-font;
-      color: rgba( 255, 255, 255, 0.541 );
       line-height: 1.429;
       text-align: center; 
   }
 }
+@media (min-resolution: 192dpi) {
+    .header {
+    background-image: linear-gradient(rgba( 14, 31, 52, 0.29 ),rgba( 14, 31, 52, 0.29 )), url(../images/bg_mobile@2x.png);
+}
+}
 .header__logotype {
     margin: 0 auto;
-    padding-top: 30px;
-    margin-bottom: 26px;
+}
+.header__link-logotype {
+    display: block;
+    margin-bottom: 24px;
+    animation-name: flipInX;
+    animation-duration: 2s;
 }
 .title-white {
-    font-size: 20px;
-    font-family: $main-font;
-    color: rgb( 255, 255, 255 );
+    @include font ($main-font, 20px, #ffffff);
     font-weight: 700;
 }
 @media (min-width:768px) {
-    .logotype {
-        padding-top: 45px;
-        margin-bottom: 28px;
-    }
     .header {
+        padding-top: 50px;
         min-height: 600px;
         background-image: linear-gradient(rgba( 14, 31, 52, 0.29 ),rgba( 14, 31, 52, 0.29 )), url(../images/background_tablet.png);
         background-position: center bottom -60px;
@@ -58,12 +57,21 @@
             margin-bottom: 5px;
         }
         &__title-h3 {
+            font-size: 46px;
             margin-bottom: 12px;
             width: 540px;
         }
         &__title-text {
             width: 290px;
         }
+        &__link-logotype {
+            margin-bottom: 30px;
+        }
+    }
+    @media (min-resolution: 192dpi) {
+        .header {
+        background-image: linear-gradient(rgba( 14, 31, 52, 0.29 ),rgba( 14, 31, 52, 0.29 )), url(../images/bg_tablet@2x.png);
+    }
     }
     .title-white {
         font-size: 36px;
@@ -71,12 +79,13 @@
     }
 }
 @media (min-width:1200px) {
-    .logotype {
-        padding-top: 35px;
-        margin-bottom: 32px;
-    }
     .header {
         background-image: linear-gradient(rgba( 14, 31, 52, 0.29 ),rgba( 14, 31, 52, 0.29 )), url(../images/background.png);
+    }
+    @media (min-resolution: 192dpi) {
+        .header {
+        background-image: linear-gradient(rgba( 14, 31, 52, 0.29 ),rgba( 14, 31, 52, 0.29 )), url(../images/bg_des@2x.png);
+    }
     }
 }  
 

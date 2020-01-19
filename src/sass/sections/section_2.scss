@@ -6,21 +6,11 @@
     width: 258px;
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 60px;
-}
-
-// delete next
-
-.title-white {
-    font-size: 20px;
-    line-height: 60px;
-    color: $main-white;
-    font-family: $main-font;
-    font-weight: 800;
+    padding-bottom: 70px;
 }
 
 .title-white_uppercase {
-    text-transform: uppercase;
+    @include text-style (60px, uppercase, 800);
     margin-bottom: 40px;
     }
 
@@ -45,11 +35,9 @@
 }
 
 .finding__description {
-    color: $text-color;
-    font-family: $main-font;
+    @include font ($main-font, 14px, $text-color);
     font-weight: 400;
     line-height: 1.5;
-    font-size: 14px;
 }
 
 
@@ -74,9 +62,9 @@
         padding-bottom: 80px;
     }
 
-    .title-white {
+    .title-white_uppercase {
         font-size: 36px;
-        margin-bottom: 65px;
+        margin-bottom: 80px;
     }
     
     .finding__list {
@@ -103,11 +91,11 @@
 }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 
     .finding-container {
-        padding-top: 110px;
-        padding-bottom: 64px;
+        padding-top: 100px;
+        padding-bottom: 74px;
         width: 994px;
         margin: 0 auto;
         display: flex;
@@ -124,6 +112,7 @@
     }
 
     .finding__list {
+        transform: translateY(10px);
         width: 654px;
     }
 

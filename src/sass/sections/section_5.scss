@@ -20,10 +20,8 @@
   }
 
   &__list-text {
-    font-size: 14px;
-    font-family: $main-font;
+    @include font ($main-font, 14px, #787a84);
     line-height: 1.5;
-    color: #787a84;
     text-align: left;
 
     &:not(:last-child) {
@@ -38,12 +36,8 @@
 }
 
 .title {
-  font-size: 20px;
-  font-family: $main-font;
-  color: #1b2436;
-  font-weight: 800;
-  line-height: 1.5;
-  text-transform: uppercase;
+  @include font ($main-font, 20px, #1b2436);
+  @include text-style (1.5, uppercase, 800);
   text-align: left;
 }
 
@@ -81,7 +75,7 @@
   }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1200px) {
   .mission {
     padding-top: 95px;
     padding-bottom: 56px;

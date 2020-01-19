@@ -14,21 +14,15 @@
         }
     }
     &__title {
-        font-size: 20px;
-        font-family: $main-font;
-        color: rgb( 27, 36, 54 );
-        font-weight: 800;
-        text-transform: uppercase;
-        line-height: 1.5;
+        @include font ($main-font, 20px, #1b2436);
+        @include text-style (1.5, uppercase, 800);
         text-align: left;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
         letter-spacing: 1.2px;
     
     }
     &__text {
-        font-size: 14px;
-        font-family: $main-font;
-        color: rgb( 27, 36, 54 );
+        @include font ($main-font, 14px, #1b2436);
         font-weight: 800;
         line-height: 1.5;
         text-align: left;
@@ -44,7 +38,7 @@
     counter-increment: section1_counter;
     content: "0" counter(section1_counter) "_";
     font-size: 65px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgb(246, 246, 246);
     font-weight: bold;
     line-height: 1.2;
@@ -59,7 +53,7 @@
 }
 
 .section1__list-item:not(:last-child) .section1__text {
-    margin-bottom: 55px;
+    margin-bottom: 51px;
 }
 .section1__list-item:last-child .section1__text {
     width: 245px;
@@ -107,7 +101,7 @@
     .section1 {
         min-height: 420px;  
         margin: 0 auto;
-        padding: 120px 0 100px 0;
+        padding: 68px 0 18px 0;
         &__container {
             width: 1070px;
         }

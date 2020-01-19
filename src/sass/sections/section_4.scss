@@ -12,11 +12,9 @@
   }
 
   &__text {
-    font-size: 16px;
-    font-family: $main-font;
+    @include font ($main-font, 16px, $text-color);
     font-weight: 500;
     line-height: 1.5;
-    color: #6b6f7a;
     text-align: center;
       
     &-link {
@@ -55,7 +53,7 @@
 }
 
 
-@media(min-width: 1024px) {
+@media(min-width: 1200px) {
   .description {
     padding: 98px 0;
     

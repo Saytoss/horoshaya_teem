@@ -1,11 +1,7 @@
 .rewards__title {
+    @include text-style (2, uppercase, 800);
+    @include font ($main-font, 20px,#22252e);
     padding-top: 22px;
-    font-size: 20px;
-    font-family: $main-font;
-    color: rgb(34, 37, 46);
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 2;
     text-align: center;
     margin-bottom: 18px;
     padding-bottom: 32px;
@@ -49,20 +45,14 @@
             z-index: -1;
         }
         &-title {
+            @include font ($main-font, 18px, #000000);
+            @include text-style (1.44, uppercase, 800);
             padding-top: 40px;
             padding-left: 24px;
-            font-size: 18px;
-            font-family: $main-font;
-            color: rgb(0, 0, 0);
-            font-weight: 800;
-            text-transform: uppercase;
-            line-height: 1.444; 
             margin-bottom: 12px;
         }
         &-text {
-            font-size: 14px;
-            font-family: $main-font;
-            color: #7f828c;
+            @include font ($main-font, 14px, #7f828c);
             font-weight: 400;
             line-height: 1.5;
             padding-left: 28px;
@@ -85,6 +75,7 @@
 @media (max-width: 767px)  {
     .rewards__container {
         width: 320px;
+        margin: 0 auto;
     }
     .rewards__list-item:first-child {
         height: 414px;
@@ -122,7 +113,7 @@
         width: 156px;
      }
  }
- @media (min-width: 1024px) {
+ @media (min-width: 1200px) {
     .rewards__title {
         padding-top: 36px;
         margin-bottom: 36px;
@@ -150,7 +141,7 @@
     .rewards__list-item-title {
         width: 269px;
      }
-     .rewards__list-item{ 
+     .rewards__list-item{
          transition: transform 0.3s ease-in;
      }
      .rewards__list-item:hover {
@@ -158,4 +149,3 @@
      }
  }
 
-  
